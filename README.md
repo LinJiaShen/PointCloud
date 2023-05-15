@@ -3,13 +3,13 @@
 An analysis of State-of-art point cloud registration
 
 [Datasets](./Datasets/README.md)
-  [Single-Object](./Datasets/Single-Object/README.md)
-  [Indoor](./Datasets/Indoor/README.md)
-  [Outdoor](./Datasets/Outdoor/README.md)
-  [Cross-Source](./Datasets/Cross-Source/README.md)
+    [Single-Object](./Datasets/Single-Object/README.md)
+    [Indoor](./Datasets/Indoor/README.md)
+    [Outdoor](./Datasets/Outdoor/README.md)
+    [Cross-Source](./Datasets/Cross-Source/README.md)
 [Algorithms](./Algorithms/README.md)
-  [feature-based]
-  [global-registration]
+    [feature-based]
+    [global-registration]
 [Results](./Results/README.md)
 
 
