@@ -27,15 +27,15 @@ To validate the algorithms' performance, we conduct experiments on diverse datas
 
 Overall, this analysis of state-of-the-art point cloud registration algorithms contributes to the field by providing a comprehensive overview of their strengths, weaknesses, and performance characteristics. The findings can aid researchers and practitioners in making informed decisions, advancing the development of accurate and robust point cloud registration solutions. The real-world applications of these findings span robotics, augmented and virtual reality, autonomous driving, and 3D reconstruction, enabling more advanced and reliable systems in these domains.
 
-### Challenges of Point cloud registration
+### Challenges of Point cloud registration ###
 
-    1.  Noises :Noise is any random or systematic error that can corrupt or degrade the quality or the accuracy of the point clouds. Noise can affect the correspondences between the
+   *   Noises :Noise is any random or systematic error that can corrupt or degrade the quality or the accuracy of the point clouds. Noise can affect the correspondences between the
         points, the features, or the transformations, and it can cause false positives, false negatives, or mismatching.
-    2.  Outliers
-    3.  Partial Overlap
-    4.  Complexity
-    5.  Non-regid transformation
-    6.  Effieciency
+   *   Outliers
+   *   Partial Overlap
+   *   Complexity
+   *   Non-regid transformation
+   *   Effieciency
 
 These challenges can limit the performance of PCR algorithms in various ways. For example, an algorithm must handle noise or outliers effectively to produce accurate alignments. Similarly, if an algorithm could be more efficient, it may not be practical to use on large point clouds. Researchers in the field of PCR have developed various techniques to address these challenges, including feature-based registration algorithms, global registration methods, and 3D matching methods.
 
