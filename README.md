@@ -29,6 +29,7 @@ Overall, this analysis of state-of-the-art point cloud registration algorithms c
 
 ### Challenges of Point cloud registration ###
 
+<<<<<<< HEAD
    *   Noises :Noise is any random or systematic error that can corrupt or degrade the quality or the accuracy of the point clouds. Noise can affect the correspondences between the
         points, the features, or the transformations, and it can cause false positives, false negatives, or mismatching.
    *   Outliers
@@ -36,6 +37,14 @@ Overall, this analysis of state-of-the-art point cloud registration algorithms c
    *   Complexity
    *   Non-regid transformation
    *   Effieciency
+=======
+    *   Noises :Noise is any random or systematic error that can corrupt or degrade the quality or the accuracy of the point clouds. Noise can affect the correspondences between the points, the features, or the transformations, and it can cause false positives, false negatives, or mismatching.
+    *   Outliers
+    *   Partial Overlap
+    *   Complexity
+    *   Non-regid transformation
+    *   Effieciency
+>>>>>>> 3d6bee6a5b0735cafc11d8413f51d798f61e813c
 
 These challenges can limit the performance of PCR algorithms in various ways. For example, an algorithm must handle noise or outliers effectively to produce accurate alignments. Similarly, if an algorithm could be more efficient, it may not be practical to use on large point clouds. Researchers in the field of PCR have developed various techniques to address these challenges, including feature-based registration algorithms, global registration methods, and 3D matching methods.
 
