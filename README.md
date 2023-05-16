@@ -29,8 +29,7 @@ Overall, this analysis of state-of-the-art point cloud registration algorithms c
 
 ### Challenges of Point cloud registration ###
 
-   *   Noises :Noise is any random or systematic error that can corrupt or degrade the quality or the accuracy of the point clouds. Noise can affect the correspondences between the
-        points, the features, or the transformations, and it can cause false positives, false negatives, or mismatching.
+   *   Noises
    *   Outliers
    *   Partial Overlap
    *   Complexity
@@ -44,8 +43,47 @@ These challenges can limit the performance of PCR algorithms in various ways. Fo
 
 ### Single-Object
 
+#### Dataset 1
+
+#### Stanford
+
 ### Indoor
+
+#### Redwood datasets
+
+#### The ASL datasets
 
 ### Outdoor
 
-### Crossover
+#### The ASL datasets
+
+#### Lidar datasets
+
+### Cross Source
+
+#### Cross Source dataset
+
+## Algorithms
+
+### Feature-based
+
+#### Feature Extract
+
+FPFH
+
+FCGF
+
+#### Feature Matching
+
+RR
+
+#### Outlier Removal
+
+TEASER++, 
+
+### Global Registration
+
+Robust global registration of point clouds by closed-form solution in the frequency domain
+
+
+
