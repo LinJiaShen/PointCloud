@@ -24,7 +24,7 @@ If you are using the conda environment, try this:<br>
 `mv libstdc++.so.6.0.26 libstdc++.so.6.0.26.old`<br>
 
 **Change the target to point on the system's**<br>
-`rm libstdc++.so libstdc++.so.6  
-ln -s /usr/lib64/libstdc++.so.6.0.30 libstdc++.so  
-ln -s /usr/lib64/libstdc++.so.6.0.30 libstdc++.so.6  
-ln -s /usr/lib64/libstdc++.so.6.0.30 libstdc++.so.6.0.26`
+`rm libstdc++.so libstdc++.so.6`<br>
+`ln -s /usr/lib64/libstdc++.so.6.0.30 libstdc++.so`<br>
+`ln -s /usr/lib64/libstdc++.so.6.0.30 libstdc++.so.6`<br>
+`ln -s /usr/lib64/libstdc++.so.6.0.30 libstdc++.so.6.0.26`<br>
