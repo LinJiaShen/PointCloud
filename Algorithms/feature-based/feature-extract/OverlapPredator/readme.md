@@ -1,11 +1,11 @@
 # Debug Log
 
-##1. tensorboardX TypeError: Descriptors cannot not be created directly. downgrade the protobuf package to 3.20.x or lower.  
+## 1. tensorboardX TypeError: Descriptors cannot not be created directly. downgrade the protobuf package to 3.20.x or lower.  
 `pip install protobuf==3.20.*`<br>
 
 
 
-##2. ImportError: /Path/to/OverlapPredator/cpp_wrappers/cpp_subsampling/grid_subsampling.cpython-38-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv  
+## 2. ImportError: /Path/to/OverlapPredator/cpp_wrappers/cpp_subsampling/grid_subsampling.cpython-38-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv  
 This is caused by the low version of libstdc++.so.6 that makes the Cpp_wrappers cannot get the library.<br>
 
 Solution:<br>
