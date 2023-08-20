@@ -28,3 +28,9 @@ If you are using the conda environment, try this:<br>
 `ln -s /usr/lib64/libstdc++.so.6.0.30 libstdc++.so`<br>
 `ln -s /usr/lib64/libstdc++.so.6.0.30 libstdc++.so.6`<br>
 `ln -s /usr/lib64/libstdc++.so.6.0.30 libstdc++.so.6.0.26`<br>
+
+### 3. ImportError: cannot import name 'COMMON_SAFE_ASCII_CHARACTERS' from 'charset_normalizer.constant'
+`pip uninstall chardet `<br>
+`pip uninstall charset-normalizer`<br>
+`pip install chardet `<br>
+`pip install charset-normalizer==2.1.0`<br>
