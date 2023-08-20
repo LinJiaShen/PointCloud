@@ -1,13 +1,7 @@
-
-
-
-
-
-
 # Debug Log
-Predator Install
+
 ##1. tensorboardX TypeError: Descriptors cannot not be created directly. downgrade the protobuf package to 3.20.x or lower.
-pip install protobuf==3.20.*
+`pip install protobuf==3.20.*`
 
 
 
