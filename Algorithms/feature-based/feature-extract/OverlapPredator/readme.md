@@ -1,3 +1,15 @@
+#　Install OverlapPredator
+`  
+conda create -n Predator python=3.8.5
+conda activate Predator
+git clone https://github.com/overlappredator/OverlapPredator.git
+cd OverlapPredator
+conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11.0 -c pytorch
+pip install -r requirements.txt
+cd cpp_wrappers; sh compile_wrappers.sh; cd ..
+`
+
+
 # Debug Log
 
 ### 1. tensorboardX TypeError: Descriptors cannot not be created directly. downgrade the protobuf package to 3.20.x or lower.  
