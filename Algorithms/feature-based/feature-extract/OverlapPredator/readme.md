@@ -52,3 +52,5 @@ pip uninstall charset-normalizer
 pip install chardet 
 pip install charset-normalizer==2.1.0
 ```
+# Credit
+[OverlapPredator](https://github.com/prs-eth/OverlapPredator)
