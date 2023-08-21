@@ -11,6 +11,16 @@ cd cpp_wrappers; sh compile_wrappers.sh; cd ..
 ```
 warring: Pytorch1.X and CUDA might not abale to support GTX4090
 
+# Usage
+In this study, our main objective is to obtain corresponding points using this algorithm, so we made some adjustments to the code accordingly.
+
+
+
+
+
+
+
+
 # Debug Log
 
 ### 1. tensorboardX TypeError: Descriptors cannot not be created directly. downgrade the protobuf package to 3.20.x or lower.  
