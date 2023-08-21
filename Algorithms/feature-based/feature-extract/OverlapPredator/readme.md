@@ -1,4 +1,5 @@
 # Install OverlapPredator
+Python=3.8.5 Pytorch=1.7.1 CUDA=11.0 on Ubuntu22.04 GTX3090
 ```
 conda create -n Predator python=3.8.5
 conda activate Predator
@@ -8,6 +9,7 @@ conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11
 pip install -r requirements.txt 
 cd cpp_wrappers; sh compile_wrappers.sh; cd ..
 ```
+warring: Pytorch1.X and CUDA might not abale to support GTX4090
 
 # Debug Log
 
