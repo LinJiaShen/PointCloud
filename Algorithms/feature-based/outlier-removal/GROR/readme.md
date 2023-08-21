@@ -30,7 +30,7 @@ For example <br>
 
 # Debug Log:
 **1. Boost error:**<br>
-In the original main.cpp have a unsolvable error, which caused in the last function 
+In the original main.cpp, there is an unsolvable error that occurs in the last function.
 ```
 auto ShowVGFPointCloud2 = [](pcl::PointCloud<pcl::PointXYZ>::Ptr cloudS, pcl::PointCloud<pcl::PointXYZ>::Ptr cloudT)
 {
