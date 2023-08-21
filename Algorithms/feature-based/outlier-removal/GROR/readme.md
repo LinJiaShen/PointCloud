@@ -49,7 +49,7 @@ auto ShowVGFPointCloud2 = [](pcl::PointCloud<pcl::PointXYZ>::Ptr cloudS, pcl::Po
 		}
 	};
 ```
-The issue arises due to a different version of C++ (boost); however, using other versions does not resolve the problem either.
+The issue arises due to a different version of C++ (boost); however, using other versions does not resolve the problem either.<br>
 **2. AttributeError: module 'numpy' has no attribute 'bool'.**<br>
 In the ./lib/bechmark.utils.py `matual_selection` function:
 replace the np.bool to bool
