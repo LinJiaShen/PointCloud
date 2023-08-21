@@ -24,7 +24,8 @@ Usage:
 ```
 ./GrorReg "source path" "target path" resolution n_optimal "source correspondence path" "target correspondence path"
 ```
-For example ./GrorReg data/src.pcd data/tgt.pcd 0.1 800 data/src_cor.txt data/src_tgt.txt
+For example <br>
+./GrorReg data/src.pcd data/tgt.pcd 0.1 800 data/src_cor.txt data/src_tgt.txt
 
 
 # Debug Log:
