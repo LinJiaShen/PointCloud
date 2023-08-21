@@ -50,3 +50,33 @@ auto ShowVGFPointCloud2 = [](pcl::PointCloud<pcl::PointXYZ>::Ptr cloudS, pcl::Po
 	};
 ```
 The issue arises due to a different version of C++ (boost); however, using other versions does not resolve the problem either.
+**2. AttributeError: module 'numpy' has no attribute 'bool'.**<br>
+In the ./lib/bechmark.utils.py `matual_selection` function:
+replace the np.bool to bool
+```
+def mutual_selection(score_mat):
+    """
+    Return a {0,1} matrix, the element is 1 if and only if it's maximum along both row and column
+    
+    Args: np.array()
+        score_mat:  [B,N,N]
+    Return:
+        mutuals:    [B,N,N] 
+    """
+    score_mat=to_array(score_mat)
+    if(score_mat.ndim==2):
+        score_mat=score_mat[None,:,:]
+    
+    mutuals=np.zeros_like(score_mat)
+    for i in range(score_mat.shape[0]): # loop through the batch
+        c_mat=score_mat[i]
+        flag_row=np.zeros_like(c_mat)
+        flag_column=np.zeros_like(c_mat)
+
+        max_along_row=np.argmax(c_mat,1)[:,None]
+        max_along_column=np.argmax(c_mat,0)[None,:]
+        np.put_along_axis(flag_row,max_along_row,1,1)
+        np.put_along_axis(flag_column,max_along_column,1,0)
+        mutuals[i]=(flag_row.astype(bool)) & (flag_column.astype(bool))
+    return mutuals.astype(bool) 
+```
