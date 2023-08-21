@@ -1,13 +1,12 @@
 # Install OverlapPredator
-`  
-conda create -n Predator python=3.8.5
-conda activate Predator
-git clone https://github.com/overlappredator/OverlapPredator.git
-cd OverlapPredator
-conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11.0 -c pytorch
-pip install -r requirements.txt
-cd cpp_wrappers; sh compile_wrappers.sh; cd ..
-`
+
+`conda create -n Predator python=3.8.5` <br>
+`conda activate Predator` <br>
+`git clone https://github.com/overlappredator/OverlapPredator.git` <br>
+`cd OverlapPredator` <br>
+`conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11.0 -c pytorch` <br>
+`pip install -r requirements.txt` <br>
+`cd cpp_wrappers; sh compile_wrappers.sh; cd ..` <br>
 
 
 # Debug Log
