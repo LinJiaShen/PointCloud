@@ -40,7 +40,7 @@ This is caused by the low version of libstdc++.so.6 that makes the Cpp_wrappers 
 Solution:<br>
 If you are using the conda environment, try this:<br>
 **First, find the newest version of libstdc++.so.6 in your computer**<br>
-```sudo find / -name "libstdc++.so.6```<br>
+```sudo find / -name libstdc++.so.6```<br>
 **Then, check if your newest version of the libstdc++.so.6 support the throw_bad_array**<br>
 ```objdump -T /usr/lib64/libstdc++.so.6.0.29  | grep throw_bad_array```<br>
 **Open the conda environment of the OverlapPredator**<br>
