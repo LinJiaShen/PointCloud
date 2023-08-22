@@ -18,9 +18,11 @@ To use the different weights,
 1. modify the `config.architechture` layer that fit the official layers settings in config/models.py
 2. remove the train_loader (It caused some miss matching and a high vmemory cost. However, its too difficult to use the train_loader when the input point clouds are customize)
 3. change the config_path to the weights you are going to use, all the config file(.yaml) is save in the configs/test/ , and we modified some detail in the yaml for the testing.
-4. change the weights_path to the path you save the weights, and the weights can be downloaded from 
+4. change the weights_path to the path you save the weights, and the weights can be downloaded by running `sh scripts/download_data_weight.sh`
 
-
+**Warning:**
+When you are testing the KITTI and ModelNet40 datasets, make sure to downsampled the input point clouds to avoid the `CUDA out of memory.`
+Moreover, due to the OverlapPredator-ModelNet model artitecher is deeper, which makes it vmemory hungry, and hard to feed the bigger input to test the synthetic data.
 
 
 
