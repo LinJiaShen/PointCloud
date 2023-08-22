@@ -13,8 +13,12 @@ warring: Pytorch1.X and CUDA might not abale to support GTX4090
 
 # Usage
 In this study, our main objective is to obtain corresponding points using this algorithm, so we made some adjustments to the code accordingly.
-
-
+We modified the scrupts/demo.py for customn the testing input, download the main.ipynb to see how to modify the input.
+To use the different weights,
+1. modify the `config.architechture` layer that fit the official layers settings in config/models.py
+2. remove the train_loader (It caused some miss matching and a high vmemory cost. However, its too difficult to use the train_loader when the input point clouds are customize)
+3. change the config_path to the weights you are going to use, all the config file(.yaml) is save in the configs/test/ , and we modified some detail in the yaml for the testing.
+4. change the weights_path to the path you save the weights, and the weights can be downloaded from 
 
 
 
