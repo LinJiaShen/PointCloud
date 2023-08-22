@@ -15,7 +15,8 @@ cd ../.. && cd examples/teaser_python_ply
 python teaser_python_ply.py
 ```
 
-
+# Usage
+Please refer to the [official example] (https://github.com/MIT-SPARK/TEASER-plusplus/blob/master/python/teaserpp_python/teaserpp_example.py)
 
 
 # Debug Log
