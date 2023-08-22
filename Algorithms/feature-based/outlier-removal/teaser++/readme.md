@@ -20,12 +20,17 @@ python teaser_python_ply.py
 
 # Debug Log
 1. ImportError: /home/../anaconda3/envs/teaserpp/lib/python3.6/site-packages/open3d/../../../libstdc++.so.6: version `GLIBCXX_3.4.29' not found
-It is caused by the low version of libstdc++
+It is caused by the low version of libstdc++, remove .. in the path to your username
 Solution:
 If you are using the conda environment, try this: <br>
 First, find the newest version of libstdc++.so.6 in your computer<br>
 `sudo find / -name libstdc++.so.6`<br>
-Then, check if your newest version of the libstdc++.so.6 support the GLIBCXX_3.4.29
-objdump -T /usr/lib64/libstdc++.so.6.0.29  | grep GLIBCXX_3.4.29
-
+Then, check if your newest version of the libstdc++.so.6 support the GLIBCXX_3.4.29<br>
+```
+strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30  | grep GLIBCXX_3.4.29
+rm /home/../anaconda3/envs/teaserpp/lib/python3.6/site-packages/open3d/../../../libstdc++.so /home/../anaconda3/envs/teaserpp/lib/python3.6/site-packages/open3d/../../../libstdc++.so.6
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30 /home/../anaconda3/envs/teaserpp/lib/python3.6/site-packages/open3d/../../../libstdc++.so
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30 /home/../anaconda3/envs/teaserpp/lib/python3.6/site-packages/open3d/../../../libstdc++.so.6
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30 /home/../anaconda3/envs/teaserpp/lib/python3.6/site-packages/open3d/../../../libstdc++.so.6.0.26
+```
 3. 
