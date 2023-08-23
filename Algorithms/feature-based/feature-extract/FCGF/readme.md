@@ -6,6 +6,7 @@ Before the installation, please make sure you have already installed the require
 3. Python v3.7 or higher
 4. Pytorch v1.6 or higher
 5. MinkowskiEngine v0.5 or higher
+<br>
 Warning: The MinkowskiEngine do not support Windows, please make sure that you are install under the Linux system.
 ```
 conda create -n py3-fcgf python=3.7
