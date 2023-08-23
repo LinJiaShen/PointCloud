@@ -25,6 +25,11 @@ cd FCGF
 # Do the following inside the conda environment
 pip install -r requirements.txt
 ```
+
+# Usage
+For testing your own data, you can refer the `main_extract` function in main.ipynb
+
+
 # Debug Log
 1. **ImportError: /home/../anaconda3/envs/fcgf/lib/python3.7/site-packages/MinkowskiEngineBackend/_C.cpython-37m-x86_64-linux-gnu.so: undefined symbol: _ZNSt15__exception_ptr13exception_ptr9_M_addrefEv** <br>
 Replace the /home/../ to /home/your_user_name/
