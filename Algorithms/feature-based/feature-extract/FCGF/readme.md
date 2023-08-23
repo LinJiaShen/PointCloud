@@ -11,11 +11,11 @@ conda create -n py3-fcgf python=3.7
 conda activate py3-fcgf
 conda install numpy
 conda install openblas-devel -c anaconda
-conda install pytorch=1.9.0 torchvision cudatoolkit=11.1 -c pytorch -c nvidia
+# Install Pytorch, get the right version and install instructions from https://pytorch.org/get-started/locally/
+
+# After installed the pytorch, install global pybind for mikowskiEngine
 pip install "pybind11[global]"
 # Install MinkowskiEngine
-# Uncomment the following line to specify the cuda home. Make sure `$CUDA_HOME/nvcc --version` is 11.X
-# export CUDA_HOME=/usr/local/cuda-11.1
 pip install -U git+https://github.com/NVIDIA/MinkowskiEngine -v --no-deps --install-option="--blas_include_dirs=${CONDA_PREFIX}/include" --install-option="--blas=openblas"
 ```
 Next, download FCGF git repository and install the requirements
