@@ -12,7 +12,6 @@ conda activate py3-fcgf
 conda install numpy
 conda install openblas-devel -c anaconda
 # Install Pytorch, get the right version and install instructions from https://pytorch.org/get-started/locally/
-
 # After installed the pytorch, install global pybind for mikowskiEngine
 pip install "pybind11[global]"
 # Install MinkowskiEngine
