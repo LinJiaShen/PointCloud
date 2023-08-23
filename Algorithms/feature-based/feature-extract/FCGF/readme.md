@@ -1,6 +1,12 @@
 # Install FCGF
-We adjusted some step from [offcial install guide](https://github.com/chrischoy/FCGF), and installed in Ubuntu22.04 with conda
-
+We adjusted some step from [offcial install guide](https://github.com/chrischoy/FCGF), and installed in Ubuntu22.04 with conda.
+Before the installation, please make sure you have already installed the required components.
+1. Ubuntu 14.04 or higher
+2. CUDA 11.1 or higher
+3. Python v3.7 or higher
+4. Pytorch v1.6 or higher
+5. MinkowskiEngine v0.5 or higher
+Warning: The MinkowskiEngine do not support Windows, please make sure that you are install under the Linux system.
 ```
 conda create -n py3-fcgf python=3.7
 conda activate py3-fcgf
