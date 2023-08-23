@@ -25,5 +25,19 @@ cd FCGF
 # Do the following inside the conda environment
 pip install -r requirements.txt
 ```
+# Debug Log
+1. **ImportError: /home/../anaconda3/envs/fcgf/lib/python3.7/site-packages/MinkowskiEngineBackend/_C.cpython-37m-x86_64-linux-gnu.so: undefined symbol: _ZNSt15__exception_ptr13exception_ptr9_M_addrefEv** <br>
+Replace the /home/../ to /home/your_user_name/
+```
+strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30  | grep _ZNSt15__exception_ptr13exception_ptr9_M_addrefEv
+rm /home/../anaconda3/envs/fcgf/lib/python3.7/site-packages/open3d/../../../libstdc++.so.6 /home/../anaconda3/envs/fcgf/lib/python3.7/site-packages/open3d/../../../libstdc++.so.6 /home/../anaconda3/envs/fcgf/lib/python3.7/site-packages/open3d/../../../libstdc++.so.6.0.26
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30 /home/../anaconda3/envs/fcgf/lib/python3.7/site-packages/open3d/../../../libstdc++.so
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30 /home/../anaconda3/envs/fcgf/lib/python3.7/site-packages/open3d/../../../libstdc++.so.6
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30 /home/../anaconda3/envs/fcgf/lib/python3.7/site-packages/open3d/../../../libstdc++.so.6.0.26
+```
+2. 
+
+
+
 # Credit
 [FCGF](https://github.com/chrischoy/FCGF)
