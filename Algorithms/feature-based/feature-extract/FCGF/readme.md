@@ -25,3 +25,5 @@ cd FCGF
 # Do the following inside the conda environment
 pip install -r requirements.txt
 ```
+# Credit
+[FCGF](https://github.com/chrischoy/FCGF)
