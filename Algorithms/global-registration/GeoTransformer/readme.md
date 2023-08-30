@@ -12,6 +12,8 @@ Warning!
 The algorithm is vgpu hungry, while using the indoor model and modelnet model.
 To test the modelnet data, we suggest to seperate the input point clouds(reduce the amount of the points).
 
+While we testing the algorithm on modelnet, it needed too much vgpu that almost none of the data is success.
+
 # Error
 1. RuntimeError: CUDA out of memory.
    It is due to the vgpu hungry.
