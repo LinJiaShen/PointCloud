@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 
 # Usage
-For testing your own data, you can refer the `main_extract` function in main.ipynb. And download the models in the [models zoo](https://github.com/chrischoy/FCGF#registration-test-on-3dmatch)
+For testing your own data, you can refer the `main_extract` function in extract_example.py. And download the models in the [models zoo](https://github.com/chrischoy/FCGF#registration-test-on-3dmatch)
 
 
 # Debug Log
