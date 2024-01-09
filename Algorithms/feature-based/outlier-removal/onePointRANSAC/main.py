@@ -30,5 +30,5 @@ for j in range(len(datanames)-1):
     end_time = time.time()
     runtime = end_time - start_time
     print(runtime)
-    np.savetxt(f'E:/POINTCLOUD/Results/Indoor/apartment/onepointRANSAC/original/no_scale/runtime/result{j}{j+1}.txt', [runtime], fmt='%.6f')
-    np.savetxt(f'E:/POINTCLOUD/Results/Indoor/apartment/onepointRANSAC/original/no_scale/transformation_matrix/transformation_matrix{j}{j+1}.txt', transformation_matrix, fmt='%.6f')
+    np.savetxt(f'path/to/runtime/result{j}{j+1}.txt', [runtime], fmt='%.6f')
+    np.savetxt(f'path/to/transformation_matrix/transformation_matrix{j}{j+1}.txt', transformation_matrix, fmt='%.6f')
